@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 exports.up = function(knex) {
-    return knex.schema.createTable("reviewes", (table) => {
+    return knex.schema.createTable("reviews", (table) => {
         table.increments("review_id").primary();
         table.text("content");
         table.integer("score");
